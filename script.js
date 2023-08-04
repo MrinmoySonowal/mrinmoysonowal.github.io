@@ -2,16 +2,22 @@
 
 // Sample data for the cards
 const cardsData = [
+
     {
-        imageUrl: "http://www.w3.org/2000/svg",
-        cardText: "This is card 1",
+        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/grassmarket.jpg?raw=true",
+        cardText: "Grassmarket, Edinburgh",
         buttonText: "View",
     },
     {
-        imageUrl: "https://www.w3schools.com/html/pic_trulli.jpg",
-        cardText: "This is card 2",
+        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/St_abbs.jpg?raw=true",
+        cardText: "St Abbs, Scotland",
         buttonText: "View",
     },
+    {
+        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/St_Andrews.jpg?raw=true",
+        cardText: "St Andrews, Scotland",
+        buttonText: "View",
+    }
     // Add more card data here as needed
 ];
 
@@ -24,11 +30,10 @@ function createCard(cardData) {
         <div class="card-body">
           <p class="card-text">${cardData.cardText}</p>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">${cardData.buttonText}</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-            </div>
-            <small class="text-body-secondary">9 mins</small>
+<!--            <div class="btn-group">-->
+<!--              <button type="button" class="btn btn-sm btn-outline-secondary">${cardData.buttonText}</button>-->
+<!--            </div>-->
+<!--            <small class="text-body-secondary">9 mins</small>-->
           </div>
         </div>
       </div>
