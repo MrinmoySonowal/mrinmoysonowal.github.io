@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/color-modes.js"></script>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/color-modes.js"></script>-->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
-    <title>Mrinmoy's little website on the web</title>
+    <title>Mrinmoy's little site on the web</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <!--    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="styles.css" rel="stylesheet">
 
@@ -18,7 +21,36 @@
     
   </head>
 
-    
+  <!-- Bootstrap Modal -->
+  <div class="w-100 h-100 modal" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="w-100 h-100 modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content" style="width: 100%; height: 90%;">
+        <div class="modal-header">
+          <h5 class="w-100 h-90 modal-title" id="pdfModalLabel">Mrinmoy's CV</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="w-100 h-90 modal-body ">
+          <iframe class="h-100 w-100" src="MRINMOY%20SONOWAL%20CV.pdf"></iframe>
+        </div>
+        <!-- You can add a footer here if needed -->
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 h-100 modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="w-100 h-100 modal-dialog modal-fullscreen-sm-down modal-xl">
+      <div class="modal-content" style="width: 100%; height: 90%;">
+        <div class="modal-header" id="imageModalHeader">
+<!--          header added dynamically-->
+        </div>
+        <div class="w-100 h-90 modal-body" id="imageModalBody">
+<!--            modal body dynamically added-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <header data-bs-theme="dark">
   <div class="collapse text-bg-dark" id="navbarHeader">
     <div class="container">
@@ -31,7 +63,7 @@
           <h4>Contact</h4>
           <ul class="list-unstyled">
             <li><a href="https://www.instagram.com/mrinmoy_sonowal_" class="text-white">Follow on Instagram</a></li>
-            <li><a href="https://uk.linkedin.com/in/mrinmoys" class="text-white">Connect in Linkedin</a></li>
+            <li><a href="https://uk.linkedin.com/in/mrinmoys" class="text-white">Connect on LinkedIn</a></li>
             <li><a href="mailto: mrinmoy.mly.sonowal@gmail.com" class="text-white">Email me</a></li>
           </ul>
         </div>
@@ -61,23 +93,8 @@
         <p class="lead text-body-secondary">A man on a mission to deliver computer applications that people enjoy.</p>
         <p>
           <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#pdfModal">Click here to view my CV</a>
-<!--          <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
         </p>
-        <!-- Bootstrap Modal -->
-        <div class="w-100 h-100 modal" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-          <div class="w-100 h-100 modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content" style="width: 100%; height: 90%;">
-              <div class="modal-header">
-                <h5 class="w-100 h-90 modal-title" id="pdfModalLabel">PDF Viewer</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="w-100 h-90 modal-body ">
-                  <iframe class="h-100 w-100" src="MRINMOY%20SONOWAL%20CV.pdf"></iframe>
-              </div>
-              <!-- You can add a footer here if needed -->
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -102,7 +119,7 @@
     <p class="mb-1">Album template &copy; Bootstrap</p>
   </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
     <script src="script.js"></script>
 
     </body>

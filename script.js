@@ -1,22 +1,18 @@
 // script.js
 
-// Sample data for the cards
 const cardsData = [
 
     {
-        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/grassmarket.jpg?raw=true",
-        cardText: "Grassmarket, Edinburgh",
-        buttonText: "View",
+        imageUrl: "https://onedrive.live.com/embed?resid=5A4235DE4996431D%2125389&authkey=%21AOYWWPoBpXfhvLE&width=3554&height=1999",
+        cardText: "Assam, India",
     },
     {
-        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/St_abbs.jpg?raw=true",
-        cardText: "St Abbs, Scotland",
-        buttonText: "View",
+        imageUrl: "https://onedrive.live.com/embed?resid=5A4235DE4996431D%2125273&authkey=%21ACuNaFcUuGdDCE8&width=4000&height=2252",
+        cardText: "Edinburgh, Scotland",
     },
     {
         imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/St_Andrews.jpg?raw=true",
         cardText: "St Andrews, Scotland",
-        buttonText: "View",
     }
     // Add more card data here as needed
 ];
@@ -25,20 +21,27 @@ const cardsData = [
 function createCard(cardData) {
     return `
     <div class="col">
-      <div class="card shadow-sm">
-        <img src="${cardData.imageUrl}" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+      <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer" onclick="openPhotoViewer(this)">
+        <img src="${cardData.imageUrl}" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail" >
         <div class="card-body">
           <p class="card-text">${cardData.cardText}</p>
-          <div class="d-flex justify-content-between align-items-center">
-<!--            <div class="btn-group">-->
-<!--              <button type="button" class="btn btn-sm btn-outline-secondary">${cardData.buttonText}</button>-->
-<!--            </div>-->
-<!--            <small class="text-body-secondary">9 mins</small>-->
-          </div>
         </div>
       </div>
     </div>
   `;
+}
+
+function openPhotoViewer(cardElement) {
+    const modalBody = document.getElementById("imageModalBody");
+    modalBody.innerHTML = `
+    <img class="h-100 w-100" src="${cardElement.querySelector("img").src}" height="auto" alt="${cardElement.querySelector("p").innerHTML}">
+    `;
+    const modalHeader = document.getElementById("imageModalHeader");
+    modalHeader.innerHTML = `
+          <h5 class="w-100 h-90 modal-title" id="imageModalLabel">${cardElement.querySelector("p").innerHTML}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    `;
+
 }
 
 // Function to generate all cards and append them to the card container
