@@ -1,0 +1,42 @@
+.typing-animation {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 0.15em solid transparent; /* Faux cursor animation */
+    animation: typing 3s steps(40, end), blink-caret 0.3s step-end;
+}
+
+@media (max-width: 767px) {
+    .typing-animation {
+        white-space: normal;
+        border-right: none;
+    }
+}
+
+.blink-caret {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0.15em;
+    background-color: #333; /* Color of the cursor */
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333; /* Change color to simulate blinking */
+    }
+}

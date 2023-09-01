@@ -2,8 +2,9 @@
 <html lang="en" data-bs-theme="auto">
   <head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/color-modes.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +13,9 @@
     <meta name="generator" content="Hugo 0.115.4">
     <title>Mrinmoy's little site on the web</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<!--    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="styles.css" rel="stylesheet">
-
-
+    <script src="assets/js/script.js"></script>
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/typing-animation.css" rel="stylesheet">
     
   </head>
 
@@ -51,57 +49,38 @@
   </div>
 
 
-<header data-bs-theme="dark">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Welcome to my portfolio page, where I proudly showcase some of my cherished photographs. Keep an eye out for future updates as I plan to add my projects and share more about my career journey. Stay tuned!</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://www.instagram.com/mrinmoy_sonowal_" class="text-white">Follow on Instagram</a></li>
-            <li><a href="https://uk.linkedin.com/in/mrinmoys" class="text-white">Connect on LinkedIn</a></li>
-            <li><a href="mailto: mrinmoy.mly.sonowal@gmail.com" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
+<header id="header" data-bs-theme="dark">
+  <script>
+    $(function(){
+      $('#header').load("/assets/html/header.html");
+    });
+  </script>
 </header>
 
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Mrinmoy Sonowal</h1>
-        <p class="lead text-body-secondary">A man on a mission to deliver computer applications that people enjoy.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#pdfModal">Click here to view my CV</a>
-        </p>
-
+  <section class="py-2 text-left container">
+    <div class="row py-lg-3">
+      <div class="col-lg-6 col-md-1 d-flex align-items-center">
+        <div>
+          <h1 class="fw-light">Mrinmoy Sonowal</h1>
+          <p class="lead text-body-secondary typing-animation">My mission is to deliver computer applications that people enjoy.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#pdfModal">Click here to view my CV</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-9 d-flex align-items-center justify-content-center">
+        <img src="https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/DSC_7620.JPG?raw=true" alt="Profile Image" class="img-fluid">
       </div>
     </div>
   </section>
 
+
+
+
   <div class="album py-5 bg-body-tertiary">
-
-
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="card-container">
         <!-- Cards will be dynamically added here -->
@@ -114,17 +93,16 @@
 
 <footer class="text-body-secondary py-5">
   <div class="container">
-<!--    <p class="float-end mb-1">-->
-<!--      <a href="#">Back to top</a>-->
-<!--    </p>-->
     <p class="mb-1">Album template &copy; Bootstrap</p>
   </div>
 </footer>
 
-    <script src="script.js"></script>
-  <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101423523"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
-  <script async src="//static.getclicky.com/101423523.js"></script>
-  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101423523ns.gif" /></p></noscript>
+
+
+    <!--  Clicky analytics-->
+    <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101423523"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif"/></a>
+    <script async src="//static.getclicky.com/101423523.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101423523ns.gif" /></p></noscript>
 
     </body>
 </html>
