@@ -3,15 +3,15 @@
 const cardsData = [
 
     {
-        imageUrl: "https://onedrive.live.com/embed?resid=5A4235DE4996431D%2125389&authkey=%21AOYWWPoBpXfhvLE&width=3554&height=1999",
+        imageUrl: "assets/images/Assam_tree.jpg",
         cardText: "Assam, India",
     },
     {
-        imageUrl: "https://onedrive.live.com/embed?resid=5A4235DE4996431D%2125273&authkey=%21ACuNaFcUuGdDCE8&width=4000&height=2252",
+        imageUrl: "assets/images/Edinburgh.jpg",
         cardText: "Edinburgh, Scotland",
     },
     {
-        imageUrl: "https://github.com/MrinmoySonowal/MrinmoySonowal/blob/main/St_Andrews.jpg?raw=true",
+        imageUrl: "assets/images/St_Andrews.jpg",
         cardText: "St Andrews, Scotland",
     }
     // Add more card data here as needed
