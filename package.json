@@ -1,0 +1,24 @@
+{
+  "name": "mrinmoy-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^10.7.1",
+    "aos": "^2.3.4",
+    "swiper": "^11.0.5",
+    "typed.js": "^2.1.0",
+    "particles.js": "^2.0.0",
+    "chart.js": "^4.4.1",
+    "gsap": "^3.12.2",
+    "intersection-observer": "^0.12.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8",
+    "@vitejs/plugin-legacy": "^5.2.0"
+  }
+}
