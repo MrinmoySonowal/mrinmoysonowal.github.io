@@ -802,6 +802,69 @@ body {
     color: var(--text-muted);
 }
 
+.social-loading {
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* Threads-specific styles */
+.threads-post {
+    border-left: 4px solid #000;
+}
+
+.threads-post .social-platform i {
+    color: #000 !important;
+}
+
+.social-post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-type .badge {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+
+.post-children .badge {
+    font-size: 0.75rem;
+}
+
+.quote-indicator {
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Text formatting for social posts */
+.hashtag {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.mention {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.social-post-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-post-content a:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 .contact-form-container {
     background-color: var(--bg-primary);
