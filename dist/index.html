@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mrinmoy Sonowal - Software Developer & Photographer. Delivering computer applications that people enjoy.">
+    <meta name="keywords" content="software developer, photographer, portfolio, web development, applications">
+    <meta name="author" content="Mrinmoy Sonowal">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mrinmoysonowal.com/">
+    <meta property="og:title" content="Mrinmoy Sonowal - Software Developer & Photographer">
+    <meta property="og:description" content="My mission is to deliver computer applications that people enjoy.">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mrinmoysonowal.com/">
+    <meta property="twitter:title" content="Mrinmoy Sonowal - Software Developer & Photographer">
+    <meta property="twitter:description" content="My mission is to deliver computer applications that people enjoy.">
+    <meta property="twitter:image" content="/assets/images/og-image.jpg">
+
+    <title>Mrinmoy Sonowal - Software Developer & Photographer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/DSC_7620-w0qJFBai.JPG" as="image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- PWA manifest -->
+    <link rel="manifest" href="/assets/manifest-DPCW0yfd.json">
+  <script type="module" crossorigin src="/assets/index-BkIQJq3_.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/firebase-B21EnKRq.js">
+  <link rel="modulepreload" crossorigin href="/assets/animations-9z0bpl8y.js">
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code me-2"></i>
+                Mrinmoy
+            </a>
+            
+            <!-- Theme Toggle -->
+            <div class="theme-toggle me-3">
+                <button class="btn btn-outline-light btn-sm" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social-feed">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="text-gradient">Mrinmoy Sonowal</span>
+                        </h1>
+                        <div class="hero-subtitle">
+                            <span id="typed-text"></span>
+                        </div>
+                        <p class="hero-description">
+                            My mission is to deliver computer applications that people enjoy. 
+                            I blend creativity with technology to create meaningful digital experiences.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#cvModal">
+                                <i class="fas fa-file-pdf me-2"></i>
+                                View CV
+                            </button>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-envelope me-2"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://www.instagram.com/mrinmoy_sonowal_" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://uk.linkedin.com/in/mrinmoys" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/mrinmoysonowal" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:mrinmoy.mly.sonowal@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="/assets/DSC_7620-w0qJFBai.JPG" alt="Mrinmoy Sonowal" class="profile-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="mb-4">Passionate Developer & Creative Photographer</h3>
+                        <p class="mb-4">
+                            I'm a software developer with a passion for creating applications that make a difference. 
+                            When I'm not coding, you'll find me behind the camera, capturing moments that tell stories.
+                        </p>
+                        <p class="mb-4">
+                            My journey in technology has taken me through various domains, from web development to 
+                            mobile applications. I believe in continuous learning and staying updated with the latest 
+                            technologies and trends.
+                        </p>
+                        
+                        <!-- Skills Progress Bars -->
+                        <div class="skills-section mt-5">
+                            <h4 class="mb-4">Technical Skills</h4>
+                            <div id="skills-container">
+                                <!-- Skills will be loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-stats">
+                        <div class="row text-center">
+                            <div class="col-6 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-count="50">0</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-count="3">0</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-count="100">0</div>
+                                    <div class="stat-label">Happy Clients</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-count="24">0</div>
+                                    <div class="stat-label">Support Hours</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">My professional journey</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline" id="timeline-container">
+                        <!-- Timeline items will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="project-filters" data-aos="fade-up">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="filter-btn" data-filter="photography">Photography</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="row" id="projects-container">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Feed Section -->
+    <section id="social-feed" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Social Updates</h2>
+                    <p class="section-subtitle">Stay connected with my latest updates</p>
+                </div>
+            </div>
+            
+            <!-- Social Feed Tabs -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center social-tabs" data-aos="fade-up">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#linkedin-feed">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#instagram-feed">
+                                <i class="fab fa-instagram me-2"></i>Instagram
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Feed Content -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="linkedin-feed">
+                    <div class="row" id="linkedin-posts">
+                        <!-- LinkedIn posts will be loaded here -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="instagram-feed">
+                    <div class="row" id="instagram-posts">
+                        <!-- Instagram posts will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together on your next project</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-container" data-aos="fade-up">
+                        <form id="contact-form" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>mrinmoy.mly.sonowal@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h5>LinkedIn</h5>
+                        <p>Connect with me professionally</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h5>Instagram</h5>
+                        <p>Follow my photography journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="footer-social mb-3">
+                        <a href="https://www.instagram.com/mrinmoy_sonowal_" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://uk.linkedin.com/in/mrinmoys" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/mrinmoysonowal" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mrinmoy.mly.sonowal@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="footer-text">
+                        &copy; 2024 Mrinmoy Sonowal. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cvModalLabel">Mrinmoy's CV</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe src="/MRINMOY%20SONOWAL%20CV.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Your message has been sent successfully!
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Analytics -->
+    <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101423523">
+        <img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif"/>
+    </a>
+    <script async src="//static.getclicky.com/101423523.js"></script>
+    <noscript>
+        <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101423523ns.gif" /></p>
+    </noscript>
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-Br1QgQmA.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-h-2l_BtR.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>
