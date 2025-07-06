@@ -83,12 +83,6 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#social-feed">Social</a>
                     </li>
                     <li class="nav-item">
@@ -180,7 +174,7 @@
                             technologies and trends.
                         </p>
                         
-                        <!-- Skills Progress Bars -->
+                        <!-- Skills Section -->
                         <div class="skills-section mt-5">
                             <h4 class="mb-4">Technical Skills</h4>
                             <div id="skills-container">
@@ -223,54 +217,6 @@
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Experience & Education</h2>
-                    <p class="section-subtitle">My professional journey</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="timeline" id="timeline-container">
-                        <!-- Timeline items will be loaded dynamically -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Some of my recent work</p>
-                </div>
-            </div>
-            
-            <!-- Project Filters -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <div class="project-filters" data-aos="fade-up">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="web">Web Development</button>
-                        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                        <button class="filter-btn" data-filter="photography">Photography</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Projects Grid -->
-            <div class="row" id="projects-container">
-                <!-- Projects will be loaded dynamically -->
-            </div>
-        </div>
-    </section>
-
     <!-- Social Feed Section -->
     <section id="social-feed" class="section-padding bg-light">
         <div class="container">
@@ -286,7 +232,12 @@
                 <div class="col-12">
                     <ul class="nav nav-pills justify-content-center social-tabs" data-aos="fade-up">
                         <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#linkedin-feed">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#threads-feed">
+                                <i class="fab fa-threads me-2"></i>Threads
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#linkedin-feed">
                                 <i class="fab fa-linkedin me-2"></i>LinkedIn
                             </button>
                         </li>
@@ -301,7 +252,12 @@
             
             <!-- Social Feed Content -->
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="linkedin-feed">
+                <div class="tab-pane fade show active" id="threads-feed">
+                    <div class="row" id="threads-posts">
+                        <!-- Threads posts will be loaded here -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="linkedin-feed">
                     <div class="row" id="linkedin-posts">
                         <!-- LinkedIn posts will be loaded here -->
                     </div>

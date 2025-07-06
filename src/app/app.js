@@ -2,28 +2,22 @@
 import { FirestoreService } from '../firebase/firestore.js';
 import { StorageService } from '../firebase/storage.js';
 import { SocialFeedManager } from '../social/socialFeed.js';
-import { ProjectManager } from '../components/projects.js';
 import { ContactManager } from '../components/contact.js';
 import { SkillsManager } from '../components/skills.js';
-import { TimelineManager } from '../components/timeline.js';
 import { StatsManager } from '../components/stats.js';
 
 export const initializeApp = async () => {
     try {
         // Initialize all managers
         const socialFeed = new SocialFeedManager();
-        const projectManager = new ProjectManager();
         const contactManager = new ContactManager();
         const skillsManager = new SkillsManager();
-        const timelineManager = new TimelineManager();
         const statsManager = new StatsManager();
         
         // Load initial data
         await Promise.all([
             socialFeed.initialize(),
-            projectManager.initialize(),
             skillsManager.initialize(),
-            timelineManager.initialize(),
             statsManager.initialize()
         ]);
         

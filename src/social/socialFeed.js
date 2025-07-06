@@ -53,11 +53,6 @@ export class SocialFeedManager {
      * @param {Array} posts - Array of Threads posts
      */
     renderThreadsPosts(posts) {
-        if (!this.threadsContainer) {
-            // If no dedicated Threads container, use Instagram container
-            this.threadsContainer = this.instagramContainer;
-        }
-        
         if (!this.threadsContainer) return;
         
         this.threadsContainer.innerHTML = posts.map(post => `
