@@ -6,14 +6,13 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Firebase configuration
 const firebaseConfig = {
-    // Replace with your Firebase config
-    apiKey: "your-api-key",
-    authDomain: "your-project.firebaseapp.com",
-    projectId: "your-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "your-app-id",
-    measurementId: "G-XXXXXXXXXX"
+  // Replace with your Firebase config
+  apiKey: "AIzaSyBsE7J9dLbkNIXPx_6u_7Vjnxggjbv9vus",
+  authDomain: "personal-web-65cf6.firebaseapp.com",
+  projectId: "personal-web-65cf6",
+  storageBucket: "personal-web-65cf6.firebasestorage.app",
+  messagingSenderId: "207741318712",
+  appId: "1:207741318712:web:d3e03a86fec172c1c3d8cd"
 };
 
 let app;
